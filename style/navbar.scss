@@ -1,0 +1,42 @@
+header {
+  background-color: $primary-dark;
+  color: $text-primary;
+
+  nav {
+    width: $width;
+    height: $nav-height;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      font-size: 2em;
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+      list-style: none;
+
+      a {
+        color: $text-primary;
+        text-decoration: none;
+        padding: 4px 8px;
+        margin: 0 1rem;
+        font-size: 1.5em;
+
+        &.btn__login {
+          border-radius: 10px;
+          background-image: linear-gradient(0deg, $contrast, $contrast-light);
+          color: $primary;
+          font-weight: 700;
+        }
+
+        &.btn__profile-name {
+          color: $tertiary;
+        }
+      }
+    }
+  }
+}

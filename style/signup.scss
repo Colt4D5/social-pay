@@ -1,0 +1,40 @@
+#signup-form, #login-form {
+  width: 500px;
+  background-color: darken($contrast-light, 10%);
+  box-shadow: 0 0 16px 16px rgba(0, 0, 0, 0.05),
+              0 0 8px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  margin: 1em auto;
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+
+  input {
+    margin: 0.5em 0;
+    padding: 8px;
+    border-radius: 8px;
+  }
+
+  button {
+    padding: 8px 0;
+    background-color: $primary;
+    color: $text-primary;
+    font-size: 1.5em;
+    border-radius: 8px;
+    margin: 0.25em 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: $primary-light;
+      color: #fff;
+      box-shadow: 0 0 6px rgba(255,255,255,0.75);
+    }
+  }
+}
+
+.error-msg {
+  text-align: center;
+  margin: 2rem auto;
+  color: red;
+}
